@@ -50,10 +50,10 @@ Yup it is.
 
 ### There is a reflection on how to generate paths.
 
-As a starter I looked at the Q&A in order to get a general understanding what the simulator needs and how to generate smooth paths in general. This was a great help. ( Code Lines 413 in main.cpp)
-I built up on the idea from the Q&A to check if certain maneuvers are possible or not possible i.e. if too_close is true (is true when the car is 30m close) then tell the car to go slower. (Code Lines 332-339 in main.cpp)
-I am doing the same for changing lanes to the left or to the right. In the case when a car is ahead I am checking the left and right side of me. If there is no car on the left and on the right (is true when there is no car 20 m ahead of behind) I am giving a preference to the left side. Otherwise I am going to the right side. If neihter a left lane change nor a right lane change is possible I am waiting for the situation to change and following the vehicle ahead. (Code Lines 299-329 and 355 to 402 in main.cpp)
-In my code I also included a mechanism that the car is only allowed to change lanes every 2 seconds in order to avoid continiuous lane changes. (eg Code Line 361 in main.cpp)
+* As a starter I looked at the Q&A in order to get a general understanding what the simulator needs and how to generate smooth paths in general. This was a great help. ( Code Lines 413 in main.cpp)
+* I built up on the idea from the Q&A to check if certain maneuvers are possible or not possible i.e. if too_close is true (is true when the car is 30m close) then tell the car to go slower. (Code Lines 332-339 in main.cpp)
+* I am doing the same for changing lanes to the left or to the right. In the case when a car is ahead I am checking the left and right side of me. If there is no car on the left and on the right (is true when there is no car 20 m ahead of behind) I am giving a preference to the left side. Otherwise I am going to the right side. If neihter a left lane change nor a right lane change is possible I am waiting for the situation to change and following the vehicle ahead. (Code Lines 299-329 and 355 to 402 in main.cpp)
+* In my code I also included a mechanism that the car is only allowed to change lanes every 2 seconds in order to avoid continiuous lane changes. (eg Code Line 361 in main.cpp)
 
 
 
